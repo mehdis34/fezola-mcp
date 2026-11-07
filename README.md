@@ -22,6 +22,10 @@
   <a href="https://insiders.vscode.dev/redirect/mcp/install?name=fezola&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A//api.fezola.com/mcp%22%7D"><img alt="Install in VS Code" src="https://img.shields.io/badge/Install_in-VS_Code-0098FF?style=for-the-badge&logo=visualstudiocode&logoColor=white"></a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/Sagargupta16/awesome-mcp-servers"><img alt="Listed in Awesome MCP Servers" src="https://sagargupta.online/awesome-mcp-servers/badge.svg"></a>
+</p>
+
 ---
 
 The official Gmail connectors in Claude and ChatGPT see one Google account. Most people have more: a personal address, a work one, a custom domain on iCloud or OVH, a Google Chat, a Telegram. Fezola is a **hosted remote MCP server** that puts all of them behind a single connector, so your assistant can answer "what needs my reply today?" across everything.
