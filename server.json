@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.fezola.app/fezola",
+  "title": "Fezola",
+  "description": "Read, search and draft replies across all your mailboxes, Google Chat and Telegram.",
+  "version": "1.0.0",
+  "websiteUrl": "https://app.fezola.com",
+  "icons": [
+    {
+      "src": "https://app.fezola.com/icon.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.fezola.com/mcp"
+    }
+  ]
+}
