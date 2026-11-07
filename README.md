@@ -16,6 +16,12 @@
   <a href="https://app.fezola.com/en/pricing">Pricing</a>
 </p>
 
+<p align="center">
+  <a href="https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=Fezola&connectorUrl=https%3A%2F%2Fapi.fezola.com%2Fmcp"><img alt="Add to Claude" src="https://img.shields.io/badge/Add_to-Claude-D97757?style=for-the-badge"></a>
+  <a href="https://cursor.com/en/install-mcp?name=fezola&config=eyJ1cmwiOiJodHRwczovL2FwaS5mZXpvbGEuY29tL21jcCJ9"><img alt="Add to Cursor" src="https://cursor.com/deeplink/mcp-install-dark.svg" height="28"></a>
+  <a href="https://insiders.vscode.dev/redirect/mcp/install?name=fezola&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A//api.fezola.com/mcp%22%7D"><img alt="Install in VS Code" src="https://img.shields.io/badge/Install_in-VS_Code-0098FF?style=for-the-badge&logo=visualstudiocode&logoColor=white"></a>
+</p>
+
 ---
 
 The official Gmail connectors in Claude and ChatGPT see one Google account. Most people have more: a personal address, a work one, a custom domain on iCloud or OVH, a Google Chat, a Telegram. Fezola is a **hosted remote MCP server** that puts all of them behind a single connector, so your assistant can answer "what needs my reply today?" across everything.
@@ -37,7 +43,7 @@ First create a free account at [app.fezola.com](https://app.fezola.com) and add 
 
 ### Claude (claude.ai, Desktop, mobile)
 
-Settings > Connectors > **Add custom connector**, name it `Fezola`, paste `https://api.fezola.com/mcp`, then sign in.
+Use the **Add to Claude** button above (it opens the form already filled in), or go to Settings > Connectors > **Add custom connector**, name it `Fezola`, paste `https://api.fezola.com/mcp`, then sign in.
 
 ### ChatGPT
 
@@ -53,9 +59,24 @@ Settings > Connectors > **+ Custom connector**, choose **Remote**, name it `Fezo
 claude mcp add --transport http fezola https://api.fezola.com/mcp
 ```
 
+Or as a plugin, from this repository's marketplace:
+
+```bash
+/plugin marketplace add mehdis34/fezola-mcp
+/plugin install fezola@fezola
+```
+
+### Gemini CLI
+
+```bash
+gemini extensions install https://github.com/mehdis34/fezola-mcp
+```
+
+Then run `/mcp auth fezola` to sign in.
+
 ### Cursor
 
-`~/.cursor/mcp.json`
+Use the **Add to Cursor** button above, or add it to `~/.cursor/mcp.json`:
 
 ```json
 {
@@ -67,7 +88,7 @@ claude mcp add --transport http fezola https://api.fezola.com/mcp
 
 ### VS Code
 
-`.vscode/mcp.json`
+Use the **Install in VS Code** button above, or add it to `.vscode/mcp.json`:
 
 ```json
 {

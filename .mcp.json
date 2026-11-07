@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "fezola": {
+      "type": "http",
+      "url": "https://api.fezola.com/mcp"
+    }
+  }
+}
