@@ -128,6 +128,16 @@ Any other client that supports remote MCP servers with OAuth works the same way:
 
 `send_message` exists but is **off by default**: Fezola saves drafts and you send them yourself. Every tool carries MCP annotations (read-only, destructive, idempotent) so clients can ask for confirmation where it matters.
 
+## Guides
+
+- [Multiple Gmail accounts in Claude](https://app.fezola.com/en/guides/multiple-gmail-accounts-in-claude)
+- [All your inboxes in Claude](https://app.fezola.com/en/guides/all-your-inboxes-in-claude)
+- [IMAP MCP server](https://app.fezola.com/en/guides/imap-mcp-server)
+- [iCloud Mail in Claude](https://app.fezola.com/en/guides/icloud-mail-in-claude)
+- [Yahoo Mail in Claude and ChatGPT](https://app.fezola.com/en/guides/yahoo-mail-in-claude-and-chatgpt)
+- [Google Chat in Claude and ChatGPT](https://app.fezola.com/en/guides/google-chat-in-claude-and-chatgpt)
+- [Is it safe to connect your email to AI?](https://app.fezola.com/en/guides/is-it-safe-to-connect-email-to-ai)
+
 ## Security and privacy
 
 - Messages are read live when the assistant asks. Fezola does not store your emails or chats.
