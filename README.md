@@ -2,7 +2,7 @@
   <img src="assets/logo.png" alt="Fezola" width="96" height="96">
 </p>
 
-<h1 align="center">Fezola MCP</h1>
+<h1 align="center">Fezola: IMAP, Gmail and iCloud MCP server</h1>
 
 <p align="center">
   <b>One MCP connector for every inbox and chat you own.</b><br>
@@ -28,7 +28,9 @@
 
 ---
 
-The official Gmail connectors in Claude and ChatGPT see one Google account. Most people have more: a personal address, a work one, a custom domain on iCloud or OVH, a Google Chat, a Telegram. Fezola is a **hosted remote MCP server** that puts all of them behind a single connector, so your assistant can answer "what needs my reply today?" across everything.
+Most people have more than one inbox: a personal Gmail, a work address, a custom domain on iCloud, OVH, IONOS, Gandi or Fastmail, a Google Chat, a Telegram. Fezola is a **hosted remote MCP server for email over IMAP** (plus Gmail OAuth, Google Chat and Telegram) that puts all of them behind a single connector, so Claude, ChatGPT or any MCP client can answer "what needs my reply today?" across everything. Drafts land in the inbox that got the mail.
+
+Looking for an **IMAP MCP server** without running one yourself? Add your IMAP host and password (an app password for iCloud or Gmail) once on [fezola.com](https://fezola.com), then connect `https://api.fezola.com/mcp` with OAuth: no Docker, no local process, no credentials in your MCP client config.
 
 [![Fezola demo](assets/demo.jpg)](https://youtu.be/NPiCLqNoL_0)
 
