@@ -10,10 +10,10 @@
 </p>
 
 <p align="center">
-  <a href="https://app.fezola.com">Website</a> ·
-  <a href="https://app.fezola.com/en/docs">Documentation</a> ·
+  <a href="https://app.fezola.com?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp">Website</a> ·
+  <a href="https://app.fezola.com/en/docs?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp">Documentation</a> ·
   <a href="https://youtu.be/NPiCLqNoL_0">Demo video</a> ·
-  <a href="https://app.fezola.com/en/pricing">Pricing</a>
+  <a href="https://app.fezola.com/en/pricing?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp">Pricing</a>
 </p>
 
 <p align="center">
@@ -36,6 +36,10 @@ Looking for an **IMAP MCP server** without running one yourself? Add your IMAP h
 
 > This repository holds the public documentation and client configuration for the hosted Fezola service. The server itself is closed source and runs at `https://api.fezola.com/mcp`.
 
+<p align="center">
+  <img src="assets/demo-what-needs-reply.gif" alt="Asking an AI assistant what needs a reply: answers from Gmail, OVH, Google Chat and Telegram, each labeled with its account" width="720">
+</p>
+
 ## Connect
 
 | | |
@@ -45,7 +49,7 @@ Looking for an **IMAP MCP server** without running one yourself? Add your IMAP h
 | **Authentication** | OAuth 2.1 with PKCE and dynamic client registration. You sign in to Fezola and approve the assistant on a consent screen. No API key to copy. |
 | **Registry** | Official MCP Registry: `com.fezola.app/fezola` |
 
-First create a free account at [app.fezola.com](https://app.fezola.com) and add your mailboxes and chats. Then add the connector to your client:
+First create a free account at [app.fezola.com](https://app.fezola.com?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp) and add your mailboxes and chats. Then add the connector to your client:
 
 ### Claude (claude.ai, Desktop, mobile)
 
@@ -130,13 +134,14 @@ Any other client that supports remote MCP servers with OAuth works the same way:
 
 ## Guides
 
-- [Multiple Gmail accounts in Claude](https://app.fezola.com/en/guides/multiple-gmail-accounts-in-claude)
-- [All your inboxes in Claude](https://app.fezola.com/en/guides/all-your-inboxes-in-claude)
-- [IMAP MCP server](https://app.fezola.com/en/guides/imap-mcp-server)
-- [iCloud Mail in Claude](https://app.fezola.com/en/guides/icloud-mail-in-claude)
-- [Yahoo Mail in Claude and ChatGPT](https://app.fezola.com/en/guides/yahoo-mail-in-claude-and-chatgpt)
-- [Google Chat in Claude and ChatGPT](https://app.fezola.com/en/guides/google-chat-in-claude-and-chatgpt)
-- [Is it safe to connect your email to AI?](https://app.fezola.com/en/guides/is-it-safe-to-connect-email-to-ai)
+- [Multiple Gmail accounts in Claude](https://app.fezola.com/en/guides/multiple-gmail-accounts-in-claude?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp)
+- [All your inboxes in Claude](https://app.fezola.com/en/guides/all-your-inboxes-in-claude?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp)
+- [IMAP MCP server](https://app.fezola.com/en/guides/imap-mcp-server?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp)
+- [iCloud Mail in Claude](https://app.fezola.com/en/guides/icloud-mail-in-claude?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp)
+- [Yahoo Mail in Claude and ChatGPT](https://app.fezola.com/en/guides/yahoo-mail-in-claude-and-chatgpt?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp)
+- [Google Chat in Claude and ChatGPT](https://app.fezola.com/en/guides/google-chat-in-claude-and-chatgpt?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp)
+- [Telegram in Claude and ChatGPT](https://app.fezola.com/en/guides/telegram-in-claude-and-chatgpt?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp)
+- [Is it safe to connect your email to AI?](https://app.fezola.com/en/guides/is-it-safe-to-connect-email-to-ai?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp)
 
 ## Security and privacy
 
@@ -144,7 +149,7 @@ Any other client that supports remote MCP servers with OAuth works the same way:
 - Mailbox passwords and OAuth tokens are encrypted at rest and never leave the server.
 - Each access token only sees the accounts of the user who approved it. You can revoke any assistant at any time.
 - Google Chat and Telegram access is read-only.
-- Full details: [privacy policy](https://app.fezola.com/en/privacy). Vulnerability reports: [security.txt](https://app.fezola.com/.well-known/security.txt).
+- Full details: [privacy policy](https://app.fezola.com/en/privacy?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp). Vulnerability reports: [security.txt](https://app.fezola.com/.well-known/security.txt).
 
 ## Plans
 
