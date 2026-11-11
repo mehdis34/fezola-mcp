@@ -2,11 +2,11 @@
   <img src="assets/logo.png" alt="Fezola" width="96" height="96">
 </p>
 
-<h1 align="center">Fezola: IMAP, Gmail and iCloud MCP server</h1>
+<h1 align="center">Fezola: IMAP, Gmail, Outlook and iCloud MCP server</h1>
 
 <p align="center">
   <b>One MCP connector for every inbox and chat you own.</b><br>
-  Gmail, iCloud, OVH, IONOS, Gandi or any IMAP mailbox, plus Google Chat and Telegram, in Claude, ChatGPT, Perplexity, Cursor, VS Code and any MCP client.
+  Gmail, Outlook.com, iCloud, OVH, IONOS, Gandi or any IMAP mailbox, plus Google Chat and Telegram, in Claude (and ChatGPT on Business plans), Cursor, VS Code and any MCP client.
 </p>
 
 <p align="center">
@@ -137,6 +137,7 @@ Any other client that supports remote MCP servers with OAuth works the same way:
 - [Multiple Gmail accounts in Claude](https://app.fezola.com/en/guides/multiple-gmail-accounts-in-claude?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp)
 - [All your inboxes in Claude](https://app.fezola.com/en/guides/all-your-inboxes-in-claude?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp)
 - [IMAP MCP server](https://app.fezola.com/en/guides/imap-mcp-server?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp)
+- [Outlook.com and Hotmail in Claude and ChatGPT](https://app.fezola.com/en/blog/outlook-hotmail-claude-chatgpt?utm_source=github&utm_medium=readme&utm_campaign=outlook)
 - [iCloud Mail in Claude](https://app.fezola.com/en/guides/icloud-mail-in-claude?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp)
 - [Yahoo Mail in Claude and ChatGPT](https://app.fezola.com/en/guides/yahoo-mail-in-claude-and-chatgpt?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp)
 - [Google Chat in Claude and ChatGPT](https://app.fezola.com/en/guides/google-chat-in-claude-and-chatgpt?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp)

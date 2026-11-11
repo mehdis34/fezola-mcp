@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.fezola.app/fezola",
   "title": "Fezola",
-  "description": "Email MCP for Gmail, iCloud and any IMAP inbox, plus Google Chat and Telegram: read, search, draft.",
+  "description": "Email MCP for Gmail, Outlook.com, iCloud and any IMAP inbox, plus Google Chat and Telegram: read, search, draft.",
   "version": "1.0.1",
   "websiteUrl": "https://app.fezola.com",
   "icons": [

@@ -1,7 +1,7 @@
 {
   "name": "fezola",
   "version": "1.0.0",
-  "description": "Read, search and draft replies across all your mailboxes (Gmail, iCloud, any IMAP), Google Chat and Telegram, through one remote MCP connector.",
+  "description": "Read, search and draft replies across all your mailboxes (Gmail, Outlook.com, iCloud, any IMAP), Google Chat and Telegram, through one remote MCP connector.",
   "mcpServers": {
     "fezola": {
       "httpUrl": "https://api.fezola.com/mcp"
