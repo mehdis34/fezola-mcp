@@ -1,7 +1,7 @@
 {
   "name": "fezola",
   "version": "1.1.0",
-  "description": "One remote MCP connector for all your accounts: every mailbox (Gmail, Outlook.com, iCloud, any IMAP), Google Chat, Telegram, Google Calendar, Google Ads and Notion, several accounts per tool.",
+  "description": "One remote MCP connector for all your accounts: every mailbox (Gmail, Outlook.com, iCloud, any IMAP), Google Chat, Telegram, Google Calendar, Notion and ad platforms (Google Ads, Microsoft Advertising, OpenAI Ads), several accounts per tool.",
   "mcpServers": {
     "fezola": {
       "httpUrl": "https://api.fezola.com/mcp"
