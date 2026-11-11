@@ -2,11 +2,11 @@
   <img src="assets/logo.png" alt="Fezola" width="96" height="96">
 </p>
 
-<h1 align="center">Fezola: IMAP, Gmail, Outlook and iCloud MCP server</h1>
+<h1 align="center">Fezola: multi-account MCP server for email, chat, calendar, Google Ads and Notion</h1>
 
 <p align="center">
-  <b>One MCP connector for every inbox and chat you own.</b><br>
-  Gmail, Outlook.com, iCloud, OVH, IONOS, Gandi or any IMAP mailbox, plus Google Chat and Telegram, in Claude (and ChatGPT on Business plans), Cursor, VS Code and any MCP client.
+  <b>One MCP connector for every account you own, across tools.</b><br>
+  Gmail, Outlook.com, iCloud, OVH, IONOS, Gandi or any IMAP mailbox, Google Chat, Telegram, Google Calendar, Google Ads and Notion, several accounts per tool, in Claude (and ChatGPT on Business plans), Cursor, VS Code and any MCP client.
 </p>
 
 <p align="center">
@@ -28,7 +28,7 @@
 
 ---
 
-Most people have more than one inbox: a personal Gmail, a work address, a custom domain on iCloud, OVH, IONOS, Gandi or Fastmail, a Google Chat, a Telegram. Fezola is a **hosted remote MCP server for email over IMAP** (plus Gmail OAuth, Google Chat and Telegram) that puts all of them behind a single connector, so Claude, ChatGPT or any MCP client can answer "what needs my reply today?" across everything. Drafts land in the inbox that got the mail.
+Most people have more than one inbox: a personal Gmail, a work address, a custom domain on iCloud, OVH, IONOS, Gandi or Fastmail, a Google Chat, a Telegram, two Google Calendars, several Google Ads accounts, a couple of Notion workspaces. Fezola is a **hosted remote MCP server** (email over IMAP, plus Gmail OAuth, Outlook.com, Google Chat, Telegram, Google Calendar, Google Ads and Notion) that puts all of them behind a single connector, so Claude, ChatGPT or any MCP client can answer "what needs my reply today?" across everything. Drafts land in the inbox that got the mail.
 
 Looking for an **IMAP MCP server** without running one yourself? Add your IMAP host and password (an app password for iCloud or Gmail) once on [fezola.com](https://fezola.com), then connect `https://api.fezola.com/mcp` with OAuth: no Docker, no local process, no credentials in your MCP client config.
 
@@ -116,6 +116,9 @@ Any other client that supports remote MCP servers with OAuth works the same way:
 - "Find the OVH invoice from last month." One search over all accounts, attachments included (PDF, Word, images).
 - "Summarize the thread with Paul and draft a reply." The draft lands in the mailbox that received the email; you review and send.
 - "Archive the newsletters from this week" or "move this to Receipts."
+- "When am I free on Thursday across my two calendars?" Then create the event in the right one.
+- "How did my campaigns do last week across every Google Ads account? Pause the ones over budget." Changes can be checked first, and new campaigns start paused.
+- "Find the onboarding page in my Notion workspaces."
 
 ## Tools
 
@@ -127,6 +130,9 @@ Any other client that supports remote MCP servers with OAuth works the same way:
 | Mail: organize | `mark_as_read`, `mark_as_unread`, `flag_message`, `move_message`, `archive_message`, `trash_message`, `mark_as_spam` |
 | Google Chat (read-only) | `list_chat_spaces`, `list_recent_chat`, `search_chat`, `get_chat_thread` |
 | Telegram (read-only) | `list_telegram_chats`, `list_recent_telegram`, `search_telegram`, `get_telegram_chat` |
+| Google Calendar | `list_calendar_events`, `find_free_time`, `create_calendar_event`, `update_calendar_event`, `delete_calendar_event` |
+| Google Ads | `google_ads_list_accounts`, `google_ads_search`, `google_ads_campaign_performance`, `google_ads_keyword_ideas`, `google_ads_mutate`, `google_ads_set_status`, `google_ads_set_budget` |
+| Relayed services (Notion) | `search_connector_tools`, `call_connector_tool` |
 | Profile and access | `get_profile`, `update_profile`, `list_connected_assistants`, `revoke_assistant` |
 | Plan | `get_plan`, `get_upgrade_link`, `get_billing_portal_link`, `list_invoices` |
 
