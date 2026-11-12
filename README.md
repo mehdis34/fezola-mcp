@@ -5,7 +5,7 @@
 <h1 align="center">Fezola: multi-account MCP server for email, chat, calendar, ad platforms and Notion</h1>
 
 <p align="center">
-  <b>One MCP connector for every account you own, across tools.</b><br>
+  <b>One MCP connector for every account you own, across tools, with one shared Memory for all your assistants.</b><br>
   Gmail, Outlook.com, iCloud, OVH, IONOS, Gandi or any IMAP mailbox, Google Chat, Telegram, Google Calendar, Notion and three ad platforms (Google Ads, Microsoft Advertising, OpenAI Ads), several accounts per tool, in Claude (and ChatGPT on Business plans), Cursor, VS Code and any MCP client.
 </p>
 
@@ -134,6 +134,7 @@ Any other client that supports remote MCP servers with OAuth works the same way:
 | Google Ads | `google_ads_list_accounts`, `google_ads_search`, `google_ads_campaign_performance`, `google_ads_keyword_ideas`, `google_ads_mutate`, `google_ads_set_status`, `google_ads_set_budget` |
 | Microsoft Advertising | `msads_list_accounts`, `msads_campaigns`, `msads_ad_groups`, `msads_ads`, `msads_keywords`, `msads_performance`, `msads_create_campaign`, `msads_update_campaign`, `msads_set_status`, `msads_set_budget`, `msads_add_keywords`, `msads_delete` |
 | OpenAI Ads | `openai_ads_list_accounts`, `openai_ads_campaigns`, `openai_ads_ad_groups`, `openai_ads_ads`, `openai_ads_insights`, `openai_ads_conversions_insights`, `openai_ads_pixels`, `openai_ads_geo_lookup`, `openai_ads_create_campaign`, `openai_ads_update_campaign`, `openai_ads_set_campaign_status` |
+| Memory | `remember`, `recall`, `update_memory`, `forget`, `list_memories` |
 | Relayed services (Notion) | `search_connector_tools`, `call_connector_tool` |
 | Profile and access | `get_profile`, `update_profile`, `list_connected_assistants`, `revoke_assistant` |
 | Plan | `get_plan`, `get_upgrade_link`, `get_billing_portal_link`, `list_invoices` |
