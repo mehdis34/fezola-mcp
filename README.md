@@ -164,7 +164,7 @@ Any other client that supports remote MCP servers with OAuth works the same way:
 ## Plans
 
 - **Free**: 2 sources.
-- **Pro**: up to 20 sources, 9 EUR or USD per month or 90 per year, 7-day free trial.
+- **Pro**: unlimited sources, 9 EUR or USD per month or 90 per year, 7-day free trial.
 
 ## Screenshots
 
