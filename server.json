@@ -2,14 +2,16 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.fezola.app/fezola",
   "title": "Fezola",
-  "description": "Multi-account MCP with one shared Memory: Gmail, Outlook, IMAP, Chat, Telegram, Calendar, Google Ads, Microsoft Advertising, OpenAI Ads and Notion.",
-  "version": "1.1.0",
+  "description": "Shared Memory, mail, chat, Calendar, Notion and ad accounts (Google, Microsoft, OpenAI) in one MCP.",
+  "version": "1.2.0",
   "websiteUrl": "https://app.fezola.com",
   "icons": [
     {
       "src": "https://app.fezola.com/icon.png",
       "mimeType": "image/png",
-      "sizes": ["512x512"]
+      "sizes": [
+        "512x512"
+      ]
     }
   ],
   "remotes": [
