@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.fezola.app/fezola",
   "title": "Fezola",
-  "description": "Shared Memory, mail, chat, Calendar, Notion and ad accounts (Google, Microsoft, OpenAI) in one MCP.",
-  "version": "1.2.0",
+  "description": "Shared Memory, mail, chat, Calendar, Notion, Search Console, Cloudflare and ad accounts in one MCP.",
+  "version": "1.3.0",
   "websiteUrl": "https://app.fezola.com",
   "icons": [
     {

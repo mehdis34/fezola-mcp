@@ -1,6 +1,6 @@
 # Fezola
 
-Fezola gives you access to the user's accounts across tools through one MCP server, several accounts per tool: mailboxes (Gmail, Outlook.com, iCloud, OVH, any IMAP server), Google Chat, Telegram, Google Calendar, ad platforms (Google Ads, Microsoft Advertising, OpenAI Ads) and relayed services such as Notion.
+Fezola gives you access to the user's accounts across tools through one MCP server, several accounts per tool: mailboxes (Gmail, Outlook.com, iCloud, OVH, any IMAP server), Google Chat, Telegram, Google Calendar, Google Search Console, Aircall, ad platforms (Google Ads, Microsoft Advertising, OpenAI Ads) and relayed services such as Notion, Cloudflare, PostHog, DataForSEO, Brevo, ElevenLabs, Zernio, Atlassian and Linear.
 
 - Start with `list_accounts` to see the connected sources, or `list_recent` for a briefing across all of them.
 - `search_messages` searches every mailbox at once unless you pass an `accountId`.

@@ -6,7 +6,7 @@
 
 <p align="center">
   <b>One MCP connector for every account you own, across tools, with one shared Memory for all your assistants.</b><br>
-  Gmail, Outlook.com, iCloud, OVH, IONOS, Gandi or any IMAP mailbox, Google Chat, Telegram, Google Calendar, Notion and three ad platforms (Google Ads, Microsoft Advertising, OpenAI Ads), several accounts per tool, in Claude (and ChatGPT on Business plans), Cursor, VS Code and any MCP client.
+  Gmail, Outlook.com, iCloud, OVH, IONOS, Gandi or any IMAP mailbox, Google Chat, Telegram, Google Calendar, Notion, Search Console, Cloudflare, PostHog, DataForSEO, Brevo, ElevenLabs, Zernio, Aircall, Atlassian, Linear and three ad platforms (Google Ads, Microsoft Advertising, OpenAI Ads), several accounts per tool, in Claude (and ChatGPT on Business plans), Cursor, VS Code and any MCP client.
 </p>
 
 <p align="center">
@@ -28,7 +28,7 @@
 
 ---
 
-Most people have more than one inbox: a personal Gmail, a work address, a custom domain on iCloud, OVH, IONOS, Gandi or Fastmail, a Google Chat, a Telegram, two Google Calendars, several ad accounts (Google Ads, Microsoft Advertising, OpenAI Ads), a couple of Notion workspaces. Fezola is a **hosted remote MCP server** (email over IMAP, plus Gmail OAuth, Outlook.com, Google Chat, Telegram, Google Calendar, Google Ads, Microsoft Advertising, OpenAI Ads and Notion) that puts all of them behind a single connector, so Claude, ChatGPT or any MCP client can answer "what needs my reply today?" across everything. Drafts land in the inbox that got the mail.
+Most people have more than one inbox: a personal Gmail, a work address, a custom domain on iCloud, OVH, IONOS, Gandi or Fastmail, a Google Chat, a Telegram, two Google Calendars, several ad accounts (Google Ads, Microsoft Advertising, OpenAI Ads), a couple of Notion workspaces. Fezola is a **hosted remote MCP server** (email over IMAP, plus Gmail OAuth, Outlook.com, Google Chat, Telegram, Google Calendar, Google Ads, Microsoft Advertising, OpenAI Ads, Google Search Console, Notion, Cloudflare, PostHog, DataForSEO, Brevo, ElevenLabs, Zernio, Aircall, Atlassian and Linear) that puts all of them behind a single connector, so Claude, ChatGPT or any MCP client can answer "what needs my reply today?" across everything. Drafts land in the inbox that got the mail.
 
 Looking for an **IMAP MCP server** without running one yourself? Add your IMAP host and password (an app password for iCloud or Gmail) once on [fezola.com](https://fezola.com), then connect `https://api.fezola.com/mcp` with OAuth: no Docker, no local process, no credentials in your MCP client config.
 
@@ -119,6 +119,8 @@ Any other client that supports remote MCP servers with OAuth works the same way:
 - "When am I free on Thursday across my two calendars?" Then create the event in the right one.
 - "How did my campaigns do last week across every Google Ads account? Pause the ones over budget." Changes can be checked first, and new campaigns start paused. The same goes for Microsoft Advertising (no simulation mode there) and OpenAI Ads (changes are simulated first).
 - "Find the onboarding page in my Notion workspaces."
+- "Which pages gained clicks in Search Console this month?" Several Google accounts, one answer.
+- "Show last week's Cloudflare traffic" or "list the DNS records of my domain": Cloudflare, PostHog, DataForSEO, Brevo, ElevenLabs, Zernio (social media), Atlassian and Linear are reached through the relayed-services tools, several accounts each.
 
 ## Tools
 
@@ -134,10 +136,14 @@ Any other client that supports remote MCP servers with OAuth works the same way:
 | Google Ads | `google_ads_list_accounts`, `google_ads_search`, `google_ads_campaign_performance`, `google_ads_keyword_ideas`, `google_ads_mutate`, `google_ads_set_status`, `google_ads_set_budget` |
 | Microsoft Advertising | `msads_list_accounts`, `msads_campaigns`, `msads_ad_groups`, `msads_ads`, `msads_keywords`, `msads_performance`, `msads_create_campaign`, `msads_update_campaign`, `msads_set_status`, `msads_set_budget`, `msads_add_keywords`, `msads_delete` |
 | OpenAI Ads | `openai_ads_list_accounts`, `openai_ads_campaigns`, `openai_ads_ad_groups`, `openai_ads_ads`, `openai_ads_insights`, `openai_ads_conversions_insights`, `openai_ads_pixels`, `openai_ads_geo_lookup`, `openai_ads_create_campaign`, `openai_ads_update_campaign`, `openai_ads_set_campaign_status` |
+| Google Search Console | `search_console_list_properties`, `search_console_add_property`, `search_console_performance`, `search_console_inspect_url`, `search_console_list_sitemaps`, `search_console_get_sitemap`, `search_console_submit_sitemap`, `search_console_delete_sitemap` |
+| Aircall | `aircall_list_accounts`, `aircall_list_calls`, `aircall_get_call`, `aircall_comment_call`, `aircall_tag_call`, `aircall_list_tags`, `aircall_list_numbers`, `aircall_list_users`, `aircall_list_teams`, `aircall_search_contacts`, `aircall_get_contact`, `aircall_create_contact`, `aircall_update_contact` |
 | Memory | `remember`, `recall`, `update_memory`, `forget`, `list_memories` |
-| Relayed services (Notion) | `search_connector_tools`, `call_connector_tool` |
+| Relayed services (Notion, Cloudflare, PostHog, DataForSEO, Brevo, ElevenLabs, Zernio, Atlassian, Linear) | `search_connector_tools`, `call_connector_tool` |
 | Profile and access | `get_profile`, `update_profile`, `list_connected_assistants`, `revoke_assistant` |
 | Plan | `get_plan`, `get_upgrade_link`, `get_billing_portal_link`, `list_invoices` |
+
+In beta: Meta Ads and custom MCP servers (any remote MCP server you add yourself). New tools appear without reconnecting Fezola in Claude or ChatGPT.
 
 `send_message` exists but is **off by default**: Fezola saves drafts and you send them yourself. Every tool carries MCP annotations (read-only, destructive, idempotent) so clients can ask for confirmation where it matters.
 
