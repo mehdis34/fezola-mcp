@@ -10,6 +10,7 @@
 </p>
 
 <p align="center">
+  <a href="https://app.fezola.com/en/lp/multiple-mailboxes?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp&utm_content=readme-start-free"><b>Start free</b></a> ·
   <a href="https://app.fezola.com?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp">Website</a> ·
   <a href="https://app.fezola.com/en/docs?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp">Documentation</a> ·
   <a href="https://youtu.be/NPiCLqNoL_0">Demo video</a> ·
@@ -49,7 +50,7 @@ Looking for an **IMAP MCP server** without running one yourself? Add your IMAP h
 | **Authentication** | OAuth 2.1 with PKCE and dynamic client registration. You sign in to Fezola and approve the assistant on a consent screen. No API key to copy. |
 | **Registry** | Official MCP Registry: `com.fezola.app/fezola` |
 
-First create a free account at [app.fezola.com](https://app.fezola.com?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp) and add your mailboxes and chats. Then add the connector to your client:
+First [create a free account](https://app.fezola.com/en/lp/multiple-mailboxes?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp&utm_content=readme-connect) and add your mailboxes and chats. Then add the connector to your client:
 
 ### Claude (claude.ai, Desktop, mobile)
 
