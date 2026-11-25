@@ -131,8 +131,8 @@ Any other client that supports remote MCP servers with OAuth works the same way:
 | Mail: read | `list_recent`, `search_messages`, `get_message`, `get_thread`, `get_attachment`, `list_folders` |
 | Mail: drafts | `create_draft`, `reply_draft`, `forward_draft`, `update_draft`, `list_drafts`, `delete_draft` |
 | Mail: organize | `mark_as_read`, `mark_as_unread`, `flag_message`, `move_message`, `archive_message`, `trash_message`, `mark_as_spam` |
-| Google Chat (read-only) | `list_chat_spaces`, `list_recent_chat`, `search_chat`, `get_chat_thread` |
-| Telegram (read-only) | `list_telegram_chats`, `list_recent_telegram`, `search_telegram`, `get_telegram_chat` |
+| Google Chat | `list_chat_spaces`, `list_recent_chat`, `search_chat`, `get_chat_thread`, `send_chat_message`, `reply_chat_message` |
+| Telegram | `list_telegram_chats`, `list_recent_telegram`, `search_telegram`, `get_telegram_chat`, `send_telegram_message`, `reply_telegram_message` |
 | Google Calendar | `list_calendar_events`, `find_free_time`, `create_calendar_event`, `update_calendar_event`, `delete_calendar_event` |
 | Google Ads | `google_ads_list_accounts`, `google_ads_search`, `google_ads_campaign_performance`, `google_ads_keyword_ideas`, `google_ads_mutate`, `google_ads_set_status`, `google_ads_set_budget` |
 | Microsoft Advertising | `msads_list_accounts`, `msads_campaigns`, `msads_ad_groups`, `msads_ads`, `msads_keywords`, `msads_performance`, `msads_create_campaign`, `msads_update_campaign`, `msads_set_status`, `msads_set_budget`, `msads_add_keywords`, `msads_delete` |
@@ -140,7 +140,7 @@ Any other client that supports remote MCP servers with OAuth works the same way:
 | Google Search Console | `search_console_list_properties`, `search_console_add_property`, `search_console_performance`, `search_console_inspect_url`, `search_console_list_sitemaps`, `search_console_get_sitemap`, `search_console_submit_sitemap`, `search_console_delete_sitemap` |
 | Bing Webmaster Tools | `bing_webmaster_list_sites`, `bing_webmaster_traffic`, `bing_webmaster_query_stats`, `bing_webmaster_page_stats`, `bing_webmaster_keyword`, `bing_webmaster_links`, `bing_webmaster_crawl`, `bing_webmaster_url_info`, `bing_webmaster_sitemaps`, `bing_webmaster_submit_sitemap`, `bing_webmaster_submit_urls`, `bing_webmaster_submission_quota` |
 | Aircall | `aircall_list_accounts`, `aircall_list_calls`, `aircall_get_call`, `aircall_comment_call`, `aircall_tag_call`, `aircall_list_tags`, `aircall_list_numbers`, `aircall_list_users`, `aircall_list_teams`, `aircall_search_contacts`, `aircall_get_contact`, `aircall_create_contact`, `aircall_update_contact` |
-| Memory | `remember`, `recall`, `update_memory`, `forget`, `list_memories` |
+| Memory | `remember`, `recall`, `update_memory`, `forget`, `list_memories`, `list_notes`, `read_note`, `create_note`, `update_note` |
 | Relayed services (Notion, GitHub, Cloudflare, PostHog, DataForSEO, Brevo, ElevenLabs, Zernio, Atlassian, Linear) | `search_connector_tools`, `call_connector_tool` |
 | Profile and access | `get_profile`, `update_profile`, `list_connected_assistants`, `revoke_assistant` |
 | Plan | `get_plan`, `get_upgrade_link`, `get_billing_portal_link`, `list_invoices` |
@@ -166,7 +166,7 @@ In beta: Meta Ads and custom MCP servers (any remote MCP server you add yourself
 - Messages are read live when the assistant asks. Fezola does not store your emails or chats.
 - Mailbox passwords and OAuth tokens are encrypted at rest and never leave the server.
 - Each access token only sees the accounts of the user who approved it. You can revoke any assistant at any time.
-- Google Chat and Telegram access is read-only.
+- Google Chat and Telegram: the assistant reads, and sends a message or a reply only when you ask (you confirm each send in the assistant). Sending can be switched off per account in Sources to stay read-only. Telegram sends text only, in conversations the account already has.
 - Full details: [privacy policy](https://app.fezola.com/en/privacy?utm_source=github&utm_medium=readme&utm_campaign=fezola-mcp). Vulnerability reports: [security.txt](https://app.fezola.com/.well-known/security.txt).
 
 ## Plans
